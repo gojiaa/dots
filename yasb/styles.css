@@ -1,0 +1,819 @@
+:root {
+    /* colors from the gruvbox material mix medium/soft palette */
+    --yellow: #e9b143;
+    --red: #f2594b;
+    --bg0: #32302f;
+    --bg1: #32302f;
+    --bg2: #3c3836;
+    --bg3: #45403d;
+    --bg4: #504945;
+    --bg5: #665c54;
+    --bg_dim: #282828;
+    --grey0: #7c6f64;
+    --grey1: #928374;
+    --grey2: #a89984;
+    --fg0: #e2cca9;
+
+--accent: #e9b143;
+    --background: rgba(69, 64, 61, 0.85); /*bg3*/
+    --background-widget: rgba(50, 48, 45, 0.6); /*bg0*/
+    --text: #e2cca9;
+}
+
+/* GLOBAL */
+* {
+    font-size: 11px;
+    color: var(--text);
+    font-weight: 900;
+    font-family: "JetBrainsMono NFP";
+    margin: 0;
+    padding: 0;
+}
+
+.yasb-bar {
+    padding: 0 2px;
+    background-color: var(--background);
+    border-radius: 6px;
+}
+
+.icon {
+    color: var(--accent);
+    font-size: 14px;
+    margin: 0 5px;
+}
+
+.label {
+    padding: 0 6px 0 0;
+    margin: 0 3px 0 0;
+}
+
+.widget {
+    padding: 0 3px;
+    margin: 0;
+}
+
+.widget-container {
+    background-color: var(--background-widget);
+    margin: 4px 0px;
+    border-radius: 6px;
+}
+
+.widget .label {
+    padding: 2px 2px 1px 5px;
+}
+
+/* CALENDAR */
+
+.calendar {
+    background-color: var(--bg_dim);
+    border-radius: 6px;
+    border: 1px solid var(--grey1);
+}
+
+.calendar .calendar-table,
+.calendar .calendar-table::item {
+    background-color: var(--bg_dim);
+    color: var(--fg0);
+    font-family: 'Segoe UI';
+    margin: 0;
+    padding: 0;
+}
+
+.calendar .calendar-table::item:selected {
+    color: rgb(255, 255, 255);
+    border-radius: 6;
+    border: 1px solid var(--accent)
+}
+
+.calendar .day-label {
+    margin-top: 20px;
+}
+
+.calendar .day-label,
+.calendar .month-label,
+.calendar .date-label {
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    color: var(--fg0);
+    font-weight: 700;
+    min-width: 180px;
+    max-width: 180px;
+}
+
+.calendar .month-label {
+    font-weight: normal;
+}
+
+.calendar .date-label {
+    font-size: 88px;
+    font-weight: 900;
+    color: var(--fg0);
+    margin-top: -20px;
+}
+
+.komorebi-workspaces .offline-status {
+    color: var(--text);
+    font-size: 12px;
+    padding: 0 0px;
+    font-weight: 600;
+}
+
+.komorebi-workspaces .ws-btn {
+    border: none;
+    margin: 0 3px;
+    height: 10px;
+    width: 9px;
+    border-radius: 2px;
+    background-color: var(--bg4);
+    color: rgba(0, 0, 0, 0);
+}
+
+.komorebi-workspaces .ws-btn:hover {
+    color: rgba(0, 0, 0, 0);
+    background-color: var(--grey0);
+}
+
+.komorebi-workspaces .ws-btn.populated:hover {
+    color: rgba(0, 0, 0, 0);
+    background-color: var(--grey1);
+}
+
+.komorebi-workspaces .ws-btn.populated {
+    color: rgba(0, 0, 0, 0);
+    background-color: var(--grey1);
+}
+
+.komorebi-workspaces .ws-btn.active {
+    color: rgba(0, 0, 0, 0);
+    background-color: var(--accent);
+    height: 13px;
+}
+
+.komorebi-active-layout {
+    padding: 0 0px 0 0;
+}
+
+.komorebi-active-layout .label {
+    font-weight: 600;
+    padding: 2px 0 0 0;
+}
+
+/*POWER MENU WIDGET*/
+
+.power-menu-widget .label {
+    color: var(--accent);
+    font-size: 16px;
+}
+
+.power-menu-popup .button {
+    width: 160px;
+    height: 240px;
+    border-radius: 6px;
+    background-color: var(--bg3);
+    font-family: "Segoe UI";
+    color: white;
+    border: 4px solid rgba(255, 255, 255, 0);
+
+}
+
+.power-menu-popup .button.hover {
+    background-color: var(--bg1);
+    border: 4px solid var(--bg1);
+}
+
+.power-menu-popup .button .label {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--fg0);
+    font-family: "Segoe UI";
+    display: inline-block;
+    text-align: center;
+}
+
+.power-menu-popup .button .icon {
+    font-size: 64px;
+    padding-top: 54px;
+    color: var(--fg0);
+}
+
+.power-menu-popup .button.cancel {
+    height: 32px;
+}
+
+.power-menu-popup .button.cancel .label {
+    color: var(--red);
+}
+
+/* WEATHER */
+.weather-widget .icon {
+    font-size: 16px;
+}
+ 
+/* Weather Card*/
+
+.weather-card-today {
+    border: 1px solid var(--grey1);
+    border-radius: 8px;
+    background-color: var(--background);
+}
+
+.weather-card-today .label {
+    font-size: 12px;
+}
+
+.weather-card-today .label.location {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.weather-card-today .label.arert {
+    font-size: 12px;
+    font-weight: 700;
+    background-color: rgba(247, 199, 42, 0.05);
+    border: 1px solid rgba(247, 209, 42, 0.1);
+    color: rgba(196, 181, 162, 0.85);
+    border-radius: 6px;
+    padding: 5px 0;
+}
+
+.weather-card-day {
+    border: 1px solid var(--grey1);
+    border-radius: 8px;
+    background-color: var(--bg_dim);
+}
+
+.weather-card-day .label {
+    font-size: 12px;
+}
+
+/* MEDIA */
+
+.media-widget .label {
+    padding: 0 10px;
+}
+
+.media-widget .btn {
+    color: var(--accent);
+    padding: 0 0px;
+    padding-right: 0px;
+    margin: 4px 0;
+    font-family: Segoe Fluent Icons;
+}
+
+.media-widget .btn:hover {
+    color: var(--subtext0);
+}
+
+.media-widget .btn.disabled:hover,
+.media-widget .btn.disabled {
+    color: var(--surface1);
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* VOLUME */
+
+.volume-slider {
+    border: none;
+}
+.volume-slider::groove {
+    color: var(--accent)
+}
+.volume-slider::handle{
+    color: var(--accent)
+} 
+.audio-menu {
+    background-color: var(--bg_dim); 
+    border: 1px solid var(--grey1);
+    border-radius: 6px;
+}
+.audio-container .device {
+    background-color:transparent;
+    border: none;
+    padding:6px 8px 6px 4px;
+    margin: 2px 0;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.audio-container .device.selected {
+    background-color: rgba(255, 255, 255, 0.085);
+}
+.audio-container .device:hover {
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+/*LAUNCHPAD WIDGET*/
+
+/* Widget style */
+.launchpad-widget {
+    padding: 0 6px 0 6px;
+}
+.launchpad-widget .label {}
+.launchpad-widget .icon {
+    font-size: 16px;
+    color: var(--accent);
+}
+
+/* Launchpad context menu style */
+.launchpad .context-menu {
+    background-color: var(--bg_dim);
+    border: none;
+    border-radius: 6px;
+    padding: 4px 0px;
+    font-family: 'Segoe UI';
+    font-size: 12px;
+    color: var(--fg0);
+    font-weight: 600;
+}
+.launchpad .context-menu::item {
+    background-color: transparent;
+    padding: 6px 12px;
+    margin: 2px 6px;
+    border-radius: 4px;
+    min-width: 100px;
+}
+.launchpad .context-menu::item:selected {
+    background-color: var(--bg0);
+    color: var(--fg0);
+}
+.launchpad .context-menu::item:pressed {
+    background-color: var(--bg0);
+}
+.launchpad .context-menu::separator {
+    height: 1px;
+    background-color: var(--bg2);
+    margin: 4px 8px;
+}
+.launchpad .context-menu::item:disabled {
+    color: var(--bg4);
+    background-color: transparent;
+}
+
+/* Launchpad App dialog style */
+.launchpad .app-dialog {
+    font-family: 'JetBrainsMono NFP';
+    background-color: var(--bg0);
+}
+.launchpad .app-dialog .buttons-container {
+    background-color: var(--bg0);
+    margin-top: 16px;
+    border-top: 1px solid var(--bg_dim);
+    max-height: 80px;
+    min-height: 80px;
+    padding: 0 20px 0 20px;
+}
+.launchpad .app-dialog .message {
+    color: var(--fg0);
+    font-family: 'JetBrainsMono NFP';
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+.launchpad .app-dialog .title-field,
+.launchpad .app-dialog .path-field,
+.launchpad .app-dialog .icon-field,
+.launchpad .app-dialog .group-field {
+    background-color: var(--bg0);
+    border: 1px solid var(--bg2);
+    border-radius: 4px;
+    padding: 0 6px;
+    font-family: 'JetBrainsMono NFP';
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--fg0);
+    margin: 10px 0px 5px 0;
+    min-height: 30px;
+}
+.launchpad .app-dialog .title-field:focus,
+.launchpad .app-dialog .path-field:focus,
+.launchpad .app-dialog .icon-field:focus {
+    border-bottom-color: var(--accent);
+}
+.launchpad .app-dialog .button {
+    background-color: var(--bg0);
+    border: none;
+    border-radius: 4px;
+    font-family: 'JetBrainsMono NFP';
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--fg0);
+    min-width: 80px;
+    padding: 0 6px;
+    margin: 10px 0 5px 6px;
+    min-height: 28px;
+    outline: none;
+}
+.launchpad .app-dialog .buttons-container .button {
+    margin: 10px 0 5px 0px;
+    font-size: 13px;
+}
+.launchpad .app-dialog .button:focus {
+    border: 2px solid var(--grey1);
+}
+.launchpad .app-dialog .button:focus,
+.launchpad .app-dialog .button:hover {
+    background-color: var(--bg3);
+}
+.launchpad .app-dialog .button:pressed {
+    background-color: var(--bg2);
+}
+.launchpad .app-dialog .button.add,
+.launchpad .app-dialog .button.save {
+    background-color: var(--accent);
+}
+.launchpad .app-dialog .button.add:focus,
+.launchpad .app-dialog .button.save:focus,
+.launchpad .app-dialog .button.add:hover,
+.launchpad .app-dialog .button.save:hover {
+    background-color: var(--accent);
+}
+.launchpad .app-dialog .button.add:pressed,
+.launchpad .app-dialog .button.save:pressed {
+    background-color: var(--accent);
+}
+.launchpad .app-dialog .button.delete {
+    background-color: var(--red);
+}
+.launchpad .app-dialog .button.delete:focus,
+.launchpad .app-dialog .button.delete:hover {
+    background-color: var(--red);
+}
+.launchpad .app-dialog .button.delete:pressed {
+    background-color: var(--red);
+}
+.launchpad .app-dialog .warning-message {
+    background-color: var(--bg_dim);
+    border: 1px solid var(--red);
+    border-radius: 4px;
+    color: var(--fg0);
+    font-family: 'JetBrainsMono NFP';
+    font-size: 12px;
+    font-weight: 600;
+    padding: 8px 12px;
+    margin: 4px 0px;
+}
+
+/* Launchpad popup style */
+.launchpad .drop-overlay {
+    background-color: var(--background);
+    border: 4px dashed var(--accent);
+}
+.launchpad .drop-overlay .text {
+    color: var(--fg0);
+    font-family: 'JetBrainsMono NFP';
+    font-size: 64px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.launchpad .launchpad-container {
+    background-color: var(--background);
+}
+.launchpad .search-container {
+    border-bottom: 1px solid var(--bg2);
+    background-color: var(--background-widget);
+    min-height: 80px;
+    margin: 0;
+    padding: 0;
+}
+.launchpad .search-input {
+    max-width: 400px;
+    padding: 8px 12px;
+    font-size: 14px;
+    min-height: 24px;
+    max-height: 24px;
+    font-family: 'Segoe UI';
+    border-radius: 20px;
+    border: 2px solid var(--bg1);
+    background-color: var(--bg0);
+    color: var(--fg0);
+}
+.launchpad .search-input:focus {
+    border: 2px solid var(--accent);
+    background-color: var(--bg2);
+}
+.launchpad .launchpad-scroll-area {
+    background-color: transparent;
+    border: none;
+}
+.launchpad .app-icon {
+    background-color: transparent;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    padding-top: 10px;
+    margin: 24px 6px 6px 6px;
+    max-width: 110px;
+    min-width: 110px;
+    min-height: 110px;
+    max-height: 110px; 
+}
+.launchpad .app-icon:focus {
+    border: 2px solid var(--accent);
+    background-color: var(--bg3);
+}
+.launchpad .app-icon:hover {
+    border: 2px solid var(--accent);
+    background-color: var(--bg2);
+}
+.launchpad .app-icon .title {
+    color: var(--fg0);
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    margin-top: 2px;
+    font-weight: 600;
+}
+/* App icon .launchpad .app-icon or URL icon .launchpad .app-icon.url */
+.launchpad .app-icon.url .title {
+    color: var(--yellow);
+}
+.launchpad .app-icon .icon {
+    padding: 0;
+    margin: 0;
+}
+
+/* Group icon styling */
+.launchpad .group-icon {
+    background-color: transparent;
+    border-radius: 12px;
+    border: 2px solid transparent;
+    padding-top: 10px;
+    margin: 24px 6px 6px 6px;
+    max-width: 110px;
+    min-width: 110px;
+    min-height: 110px;
+    max-height: 110px;
+}
+.launchpad .group-icon:focus {
+    border: 2px solid var(--accent);
+    background-color: var(--bg3);
+}
+.launchpad .group-icon:hover {
+    border: 2px solid var(--accent);
+    background-color: var(--bg2);
+}
+.launchpad .group-icon .group-icon-container {
+    background-color: var(--bg0);
+    border: 1px solid var(--bg2);
+    border-radius: 8px;
+}
+.launchpad .group-icon .title {
+    color: var(--fg0);
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    margin-top: 2px;
+    font-weight: 600;
+}
+
+/* Per-group styling */
+.launchpad .group-icon .group-icon-container.browser {
+    background-color: var(--bg2);
+    border-color: var(--bg4);
+}
+
+/* Back button when inside a group */
+.launchpad .group-back-button {
+    background-color: transparent;
+    border: none;
+    color: var(--grey2);
+    font-size: 18px;
+    font-family: "Segoe UI";
+    font-weight: 400;
+    text-align: left;
+    padding: 0 32px;
+}
+.launchpad .group-back-button:hover {
+    color: var(--fg0);
+}
+
+/* Scaled-down app & group icon containers (e.g., down from 110px to 80px) */
+.launchpad .app-icon,
+.launchpad .group-icon {
+    margin: 12px 4px 4px 4px;   /* reduced outer margins */
+    padding-top: 6px;           /* reduced top padding */
+    max-width: 80px;            /* was 110px */
+    min-width: 80px;
+    max-height: 80px;           /* was 110px */
+    min-height: 80px;
+}
+
+
+
+/* MEDIA_LITE */
+
+/* Bar */
+.media-lite-widget {
+    padding: 0;
+    margin: 0;
+}
+.media-lite-widget .text {
+    padding: 0;
+}
+.media-lite-widget .label {
+    font-size: 12px;
+    font-family: "JetBrainsMono NFP";
+    padding: 0 2px;
+}
+.media-lite-widget .title {
+    font-size: 10px;
+    font-weight: 700;
+    font-family: "JetBrainsMono NFP";
+    padding: 0 2px;
+    color: var(--text);
+}
+.media-lite-widget .artist {
+    font-size: 9px;
+    font-weight: 1000;
+    color: var(--grey2);
+    font-family: "JetBrainsMono NFP";
+    padding: 0 2px;
+}
+
+/* Popup */
+.media-lite-menu {
+    min-width: 280px;
+    max-width: 280px;
+    background-color: var(--bg0);
+} 
+.media-lite-menu .header {
+    padding: 16px 16px 0 16px;
+}
+.media-lite-menu .thumbnail {
+    cursor: pointer;
+}
+.media-lite-menu .controls {
+    padding: 32px 16px 32px 16px;
+}
+.media-lite-menu .title {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "JetBrainsMono NFP";
+}
+.media-lite-menu .artist {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--grey1);
+    font-family: "JetBrainsMono NFP";
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+.media-lite-menu .source {
+    min-width: 16px;
+    min-height: 16px;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.media-lite-menu .volume-button {
+    font-family: "Segoe Fluent Icons";
+    font-size: 16px;
+    min-width: 24px;
+    min-height: 24px;
+    color: var(--fg0);
+}
+.media-lite-menu .volume-button.muted {
+    color: var(--grey1);
+}
+.media-lite-menu .volume-button.unavailable {
+    color: var(--grey0);
+}
+.media-lite-menu .volume-slider-popup {
+    background-color: var(--bg_dim);
+    border: 1px solid var(--bg4);
+    border-radius: 10px;
+    padding: 12px 8px;
+}
+.media-lite-menu .volume-slider {
+    min-height: 120px;
+    max-height: 120px;
+}
+.media-lite-menu .volume-slider::groove {
+    background: var(--bg1);
+    width: 3px;
+    border-radius: 2px;
+}
+.media-lite-menu .volume-slider::sub-page {
+    background: var(--bg1);
+    border-radius: 2px;
+}
+.media-lite-menu .volume-slider::add-page {
+    background: var(--fg0);
+    border-radius: 2px;
+}
+.media-lite-menu .btn {
+    font-family: "Segoe Fluent Icons";
+    font-size: 14px;
+    font-weight: 400;
+    margin: 4px 2px;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    border-radius: 20px;
+    transition: background-color 0.08s, opacity 0.08s;
+    opacity: 1;
+    cursor: pointer;
+}
+.media-lite-menu .btn:clicked,
+.media-lite-menu .btn:pressed {
+    opacity: 0.5;
+}
+.media-lite-menu .btn:hover {
+    color: var(--fg0);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.media-lite-menu .btn.play {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+}
+.media-lite-menu .btn.play {
+    background-color:  var(--fg0);
+    color: var(--bg1);
+}
+.media-lite-menu .btn.shuffle.active,
+.media-lite-menu .btn.repeat.active{
+    color: #8b935c;
+} 
+.media-lite-menu .btn.disabled:hover,
+.media-lite-menu .btn.disabled {
+    color: #999;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    cursor:default;
+}
+.media-lite-menu .playback-time {
+    font-size: 11px;
+    font-family: "Segoe UI";
+    color: var(--bg5);
+}
+.media-lite-menu .progress-slider {
+    height: 10px;
+    margin: 2px 0;
+    border-radius: 3px;
+}
+.media-lite-menu .progress-slider::groove {
+    background: rgba(255, 255, 255, 0.1);
+    height: 2px;
+    border-radius: 3px;
+}
+.media-lite-menu .progress-slider::groove:hover {
+    height: 6px;
+    background: rgba(255, 255, 255, 0.2);
+}
+.media-lite-menu .progress-slider::sub-page {
+    background: var(--fg0);
+    border-radius: 3px;
+}
+
+/* POMODORO */
+
+.pomodoro-widget {
+    padding: 0 6px 0 6px;
+}
+.pomodoro-widget .icon {
+    font-size: 12px;
+    padding-right: 4px;
+}
+/* Pomodoro menu styling */
+.pomodoro-menu {
+    background-color: var(--bg2);
+    border-radius: 8px;
+}
+.pomodoro-menu .header {
+    font-size: 16px;
+    font-weight: 600;
+    max-height: 0px;
+    color: var(--fg0);
+}
+.pomodoro-menu .status {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--fg0);
+}
+.pomodoro-menu .session {
+    font-size: 12px;
+    color: var(--fg0);
+}
+.pomodoro-menu .button {
+    background-color: var(--bg1);
+    color: var(--fg0);
+    border: none;
+    border-radius: 4px;
+    padding: 6px 12px;
+}
+.pomodoro-menu .button.start {
+    background-color: var(--bg2);
+}
+.pomodoro-menu .button.reset {
+    background-color: var(--bg2);
+}
+.pomodoro-menu .button:hover {
+    background-color: var(--bg4);
+}
+.pomodoro-menu .button.pause {
+    background-color: var(--accent);
+    color: var(--bg_dim);
+}
+.pomodoro-menu .button:pressed {
+    background-color: var(--bg5);
+}

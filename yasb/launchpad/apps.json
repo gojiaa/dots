@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Steam",
+    "path": "C:\\Users\\gojia\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Steam\\Steam.lnk",
+    "icon": "C:\\Users\\gojia\\.config\\yasb\\launchpad\\icons\\steam_1788456790692.png",
+    "type": "app",
+    "group": null,
+    "id": 1788456790693
+  },
+  {
+    "title": "Steamed",
+    "path": "C:\\Users\\gojia\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Steam\\Steamed.lnk",
+    "icon": "C:\\Users\\gojia\\.config\\yasb\\launchpad\\icons\\steamed_1788456778485.png",
+    "type": "app",
+    "group": null,
+    "id": 1788456778488
+  },
+  {
+    "title": "Playnite",
+    "path": "C:\\Users\\gojia\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Scoop Apps\\Playnite.lnk",
+    "icon": "C:\\Users\\gojia\\.config\\yasb\\launchpad\\icons\\playnite_1787968291964.png",
+    "type": "app",
+    "group": null,
+    "id": 1787968291965
+  },
+  {
+    "title": "Epic Games Launcher",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Epic Games Launcher.lnk",
+    "icon": "C:\\Users\\gojia\\.config\\yasb\\launchpad\\icons\\epic_games_launcher_1782977487424.png",
+    "type": "app",
+    "group": null,
+    "id": 1782977487425
+  },
+  {
+    "title": "v2rayN",
+    "path": "C:\\Users\\gojia\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\v2rayN.lnk",
+    "icon": "C:\\Users\\gojia\\.config\\yasb\\launchpad\\icons\\v2rayn_1784062579058.png",
+    "type": "app",
+    "group": null,
+    "id": 1784062579059
+  },
+  {
+    "title": "Adobe Substance 3D Designer",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Adobe Substance 3D Designer.lnk",
+    "icon": "C:\\Users\\gojia\\.config\\yasb\\launchpad\\icons\\adobe_substance_3d_designer_1788456814858.png",
+    "type": "app",
+    "group": null,
+    "id": 1788456814859
+  },
+  {
+    "title": "Houdini",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Side Effects Software\\Houdini 21.0.440.lnk",
+    "icon": "C:\\Users\\gojia\\.config\\yasb\\launchpad\\icons\\houdini_210440_1782975375165.png",
+    "type": "app",
+    "group": "work",
+    "id": 1782975375167
+  },
+  {
+    "title": "Blender",
+    "path": "C:\\Users\\gojia\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Scoop Apps\\Blender.lnk",
+    "icon": "C:\\Users\\gojia\\.config\\yasb\\launchpad\\icons\\blender_1782977448161.png",
+    "type": "app",
+    "group": null,
+    "id": 1782977448162
+  },
+  {
+    "title": "Adobe Substance 3D Painter",
+    "path": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Adobe Substance 3D Painter.lnk",
+    "icon": "C:\\Users\\gojia\\.config\\yasb\\launchpad\\icons\\adobe_substance_3d_painter_1782977460818.png",
+    "type": "app",
+    "group": null,
+    "id": 1782977460819
+  },
+  {
+    "title": "Super Productivity",
+    "path": "C:\\Users\\gojia\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Super Productivity.lnk",
+    "icon": "C:\\Users\\gojia\\.config\\yasb\\launchpad\\icons\\super_productivity_1788539585149.png",
+    "type": "app",
+    "group": null,
+    "id": 1788539585149
+  },
+  {
+    "title": "Spotify",
+    "path": "C:\\Users\\gojia\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Spotify.lnk",
+    "icon": "C:\\Users\\gojia\\.config\\yasb\\launchpad\\icons\\spotify_1786105195026.png",
+    "type": "app",
+    "group": null,
+    "id": 1786105195027
+  },
+  {
+    "title": "Google Chrome",
+    "path": "C:\\Users\\gojia\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Google Chrome.lnk",
+    "icon": "C:\\Users\\gojia\\.config\\yasb\\launchpad\\icons\\google_chrome_1782977522908.png",
+    "type": "app",
+    "group": null,
+    "id": 1782977522909
+  }
+]
